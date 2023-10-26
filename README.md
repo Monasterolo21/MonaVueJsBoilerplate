@@ -1,4 +1,4 @@
-# VueJs Mona Boilerplate 🌴
+# vuejs_mona_template 🌴
 
 ## Description
 This is a Vue.js boilerplate project that provides a basic setup for building web applications using Vue.js. It includes the necessary configuration files and dependencies to get started with Vue.js development quickly and easily.
