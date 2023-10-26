@@ -1,18 +1,24 @@
+<!-- TODO: CHANGE CLASS -->
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container all-center bck">
+    <h1>{{ title }}</h1>
+    <p>{{ message }}</p>
+    <div class="btn" @click="sayHello">Click me!</div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+  data() {
+    return {
+      title: "My Vue.js App",
+      message: "",
+    };
+  },
+  methods: {
+    sayHello() {
+      this.message = "Hello!";
+    },
+  },
+};
 </script>
