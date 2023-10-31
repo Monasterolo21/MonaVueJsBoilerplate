@@ -2,8 +2,11 @@
 <template>
   <div class="container all-center bck">
     <h1>{{ title }}</h1>
-    <p>{{ message }}</p>
-    <div class="btn" @click="sayHello">Click me!</div>
+    <p v-motion-slide-bottom>{{ message }}</p>
+    <div class="btn-group">
+      <div class="btn" @click="sayHello">Fade!</div>
+      <div class="btn secondary" @click="toast">Toast!</div>
+    </div>
   </div>
 </template>
 
@@ -11,13 +14,16 @@
 export default {
   data() {
     return {
-      title: "My Vue.js App",
+      title: "Mona VUE Template 🌴",
       message: "",
     };
   },
   methods: {
     sayHello() {
       this.message = "Hello!";
+    },
+    toast() {
+      this.$toast.success("Hello!");
     },
   },
 };
