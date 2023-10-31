@@ -6,6 +6,9 @@ It has some of my go to packages and configurations that I use in most of my pro
 - [Custom CSS with variables]
 - [Error Page]
 - [Vue Sweet Alert 2]
+- [VueToast]
+- [VueMotion]
+- [Vue Router]
 
 
 ## Project setup
